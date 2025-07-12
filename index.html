@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Medi Bridge Hospital</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="container-fluid my-3 px-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white text-black">
+          <div class="container-fluid">
+            <div class="w-21">
+              <a
+                class="navbar-brand fw-semibold open-sans fs-5 d-flex align-items-center justify-content-center"
+                href="https://www.youtube.com/@TheMuslimLantern" target="_blank"
+              >
+                <img src="./Logo.png" alt="">
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarNavDropdown"
+            >
+              <!-- links -->
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-black" aria-current="page" href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-black"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Features
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">Find Doctor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">Blog</a>
+                </li>
+              </ul>
+
+              <!-- buttons -->
+              <div class="d-flex gap-3">
+                <a
+                  href="#"
+                  class="btn btn-light text-black px-4 py-2 shadow-sm border"
+                  >Log In</a
+                >
+                <a href="#" class="custom-teal text-white px-4">Register</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="mt-5 mt-lg-5 pt-5">
+      <div class="container-fluid px-5">
+        <div class="row">
+          <div class="col-12 col-lg-4 ms-lg-3">
+            <button class="custom-teal-light">
+              <div
+                class="top-rate d-inline-flex align-items-center justify-content-center"
+              >
+                <svg
+                  width="11"
+                  height="15"
+                  viewBox="0 0 11 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5625 5.26398C10.563 4.40147 10.3456 3.55282 9.93031 2.79686C9.51505 2.04089 8.91549 1.40213 8.18729 0.939901C7.4591 0.477672 6.62591 0.20697 5.76509 0.152937C4.90428 0.0989045 4.04377 0.263294 3.26349 0.630837C2.48322 0.99838 1.80848 1.55715 1.30196 2.25526C0.795432 2.95337 0.473548 3.76816 0.366203 4.62396C0.258858 5.47976 0.369533 6.34881 0.687948 7.15039C1.00636 7.95197 1.52219 8.66008 2.18752 9.20895V13.639C2.18746 13.7183 2.2077 13.7964 2.24631 13.8657C2.28492 13.9933 2.34062 14.0351 2.40811 14.0768C2.4756 14.1006 2.55264 14.1041 2.63191 14.1077C2.71118 14.0909 2.79005 14.0554 2.86101 14.0583L5.44446 12.7666L8.0285 14.0583C8.09328 14.0893 8.16432 14.105 8.23613 14.1043C8.35953 14.1043 8.47788 14.0552 8.56513 13.968C8.65239 13.8807 8.70141 13.7624 8.70141 13.639V9.20895C9.28355 8.7295 9.75233 8.12712 10.0741 7.44505C10.3959 6.76298 10.5627 6.01814 10.5625 5.26398ZM1.25696 5.26398C1.25696 4.43577 1.50256 3.62616 1.96269 2.93753C2.42281 2.2489 3.07681 1.71217 3.84198 1.39523C4.60714 1.07829 5.44911 0.995364 6.2614 1.15694C7.0737 1.31852 7.81984 1.71734 8.40547 2.30297C8.99111 2.8886 9.38993 3.63474 9.5515 4.44704C9.71308 5.25933 9.63015 6.1013 9.31321 6.86646C8.99627 7.63163 8.45955 8.28563 7.77091 8.74576C7.08228 9.20589 6.27267 9.45148 5.44446 9.45148C4.33425 9.45025 3.26986 9.00867 2.48482 8.22363C1.69977 7.43859 1.2582 6.37419 1.25696 5.26398ZM7.77085 12.8864L5.65209 11.8273C5.58745 11.795 5.51616 11.7781 5.44388 11.7781C5.3716 11.7781 5.30031 11.795 5.23567 11.8273L3.11808 12.8864V9.82195C3.8383 10.1901 4.63561 10.382 5.44446 10.382C6.25332 10.382 7.05062 10.1901 7.77085 9.82195V12.8864ZM5.44446 8.52092C6.08863 8.52092 6.71832 8.32991 7.25393 7.97203C7.78953 7.61415 8.20698 7.10549 8.45349 6.51036C8.7 5.91523 8.7645 5.26037 8.63883 4.62858C8.51316 3.99679 8.20296 3.41646 7.74747 2.96097C7.29198 2.50548 6.71165 2.19528 6.07986 2.06961C5.44808 1.94394 4.79321 2.00844 4.19809 2.25495C3.60296 2.50146 3.09429 2.91892 2.73641 3.45452C2.37854 3.99012 2.18752 4.61981 2.18752 5.26398C2.18844 6.12749 2.53188 6.95537 3.14248 7.56597C3.75307 8.17656 4.58095 8.52 5.44446 8.52092ZM5.44446 2.93759C5.90458 2.93759 6.35436 3.07403 6.73694 3.32966C7.11951 3.58528 7.41769 3.94862 7.59377 4.37371C7.76985 4.7988 7.81592 5.26656 7.72615 5.71783C7.63639 6.16911 7.41482 6.58363 7.08947 6.90898C6.76412 7.23433 6.3496 7.4559 5.89832 7.54567C5.44705 7.63543 4.97929 7.58936 4.55419 7.41328C4.1291 7.2372 3.76577 6.93902 3.51014 6.55645C3.25452 6.17388 3.11808 5.72409 3.11808 5.26398C3.11808 4.64698 3.36318 4.05526 3.79946 3.61897C4.23574 3.18269 4.82747 2.93759 5.44446 2.93759Z"
+                    fill="#00352E"
+                  />
+                </svg>
+              </div>
+              <span class="ms-2 align-middle"
+                >Top-rated healthcare service</span
+              >
+            </button>
+
+            <h1 class="display-3">
+              Transforming Healthcare for a Better Tomorrow
+            </h1>
+            <p>
+              With a focus on innovation, compassion, and personalized care, we
+              are committed to guiding you towards a healthier and more vibrant
+              tomorrow.
+            </p>
+            <div class="d-flex gap-4">
+              <button class="custom-teal text-white px-4">Get Started</button>
+              <button
+                class="btn btn-light text-black px-4 py-2 shadow-sm border"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7 d-flex justify-content-end" style="height: 100%";>
+              <div class="position-relative">
+                <img src="./Content.png" alt="" class="img-fluid"/>
+                <div class="position-absolute book-btn-position" style="cursor: pointer;"><button class="book-btn-position invisible">Book Now</button></div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="mt-5">
+      <div class="container-fluid px-5 py-5 bg-of-trust">
+      <div class="text-center text-secondary pb-5">Trusted by</div>
+        <div class="row d-flex align-items-center justify-content-center gap-5">
+          <div class="col-12 col-lg-2 text-center">
+           <img src="./Logo-1.png" alt="" class="img-fluid img-scale">
+          </div>
+          <div class="col-12 col-lg-2 text-center">
+           <img src="./Logo-2.png" alt="" class="img-fluid img-scale">
+          </div>
+          <div class="col-12 col-lg-2 text-center">
+           <img src="./Logo-3.png" alt="" class="img-fluid img-scale">
+          </div>
+          <div class="col-12 col-lg-2 text-center">
+           <img src="./Logo-4.png" alt="" class="img-fluid img-scale">
+          </div>
+          <div class="col-12 col-lg-2 text-center">
+           <img src="./Logo-5.png" alt="" class="img-fluid img-scale">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose us -->
+    <section class="mt-5">
+      <div class="container-fluid px-5 py-5">
+      <div class="text-center mb-5">
+        <p class="font-w fs-1">
+        Experience the Difference
+        in Our Healthcare Approach
+      </p>
+      <p class="fs-6 text-secondary">Transform your healthcare journey with our innovative and personalized approach</p>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center gap-4">
+
+        <div class="col-12 col-lg-2">
+          <div class="border d-flex flex-column align-items-center justify-content-center pt-3 pb-1 shadow-sm rounded hover-shadow px-2 py-1" style="width: 260px; height: 220px;">
+            <img src="./stethoscope.png" alt="" class="stethoscope-color img-fluid">
+            <p class="text-center pt-3 fw-bold">Expert Care</p>
+            <p class="text-center text-secondary choose-p">Our team of experienced healthcare professionals is dedicated to providing the highest quality.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-2">
+          <div class="border d-flex flex-column align-items-center justify-content-center pt-3 pb-1 shadow-sm rounded hover-shadow px-2 py-1" style="width: 260px; height: 220px;">
+            <img src="./user-circle-dashed.png" alt="" class="stethoscope-color img-fluid">
+            <p class="text-center pt-3 fw-bold">Personalized Approach</p>
+            <p class="text-center text-secondary choose-p">We understand that every patient is unique, which is why we tailor our services to meet your needs.</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-2">
+          <div class="border d-flex flex-column align-items-center justify-content-center pt-3 pb-1 shadow-sm rounded hover-shadow px-2 py-1" style="width: 260px; height: 220px;">
+            <img src="./plant.png" alt="" class="stethoscope-color img-fluid">
+            <p class="text-center pt-3 fw-bold">Focus on Wellness</p>
+            <p class="text-center text-secondary choose-p">Beyond treating illness, we emphasize preventive care and wellness promotion.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-2 ">
+          <div class="border d-flex flex-column align-items-center justify-content-center pt-3 pb-1 shadow-sm rounded hover-shadow px-2 py-1" style="width: 260px; height: 220px;">
+            <img src="./users-four.png" alt="" class="stethoscope-color img-fluid">
+            <p class="text-center pt-3 fw-bold">Community Connection</p>
+            <p class="text-center text-secondary choose-p">We are deeply rooted in the local community and are committed to serving and giving back.</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="py-5">
+      <div class="container-fluid px-5">
+        <div class="row gap-3 gap-lg-0">
+          <div class="col-12 col-lg-6 text-center">
+            <img src="./docs-pic-1.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-lg-6">
+            <div>
+
+              <h1 class="lh-2 font-w">Unveiling a Spectrum <br> of Specialized Offerings</h1>
+
+              <p class="mt-4">
+                Discover a tailored approach to your health with our versatile range of <br> specialized services, ensuring every aspect of your healthcare journey is <br> seamlessly addressed.
+              </p>
+
+              <div class="w-75">
+                <button class="px-3 py-3 rounded-3 border-0 hover-border me-3 mb-3">
+              <img src="./Vector.png" alt="" class="stethoscope-color img-fluid">
+              <span class="ms-2">Diagnostic Imaging</span>
+              </button>
+
+              <button class="px-3 py-3 rounded-3 border-0 hover-border me-3 mb-3">
+              <img src="./Vector.png" alt="" class="stethoscope-color img-fluid">
+              <span class="ms-2">Mental Health Services</span>
+              </button>
+
+              <button class="px-3 py-3 rounded-3 border-0 hover-border me-3 mb-3">
+              <img src="./Vector.png" alt="" class="stethoscope-color img-fluid">
+              <span class="ms-2">Laboratory Services</span>
+              </button>
+
+              <button class="px-3 py-3 rounded-3 border-0 hover-border me-3 mb-3">
+              <img src="./Vector.png" alt="" class="stethoscope-color img-fluid">
+              <span class="ms-2">Rehabilitation Services</span>
+              </button>
+
+              <button class="px-3 py-3 rounded-3 border-0 hover-border me-3 mb-3">
+              <img src="./Vector.png" alt="" class="stethoscope-color img-fluid">
+              <span class="ms-2">Home Healthcare</span>
+              </button>
+
+              <button class="px-3 py-3 rounded-3 border-0 hover-border me-3 mb-3">
+              <img src="./Vector.png" alt="" class="stethoscope-color img-fluid">
+              <span class="ms-2">Geriatric Care</span>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Doctor -->
+    <section class="py-5">
+    <div class="container-fluid px-5">
+      <div class="text-center mb-5">
+      <p class="font-w fs-1">
+        Meet the Healthcare
+        Heroes Ready to Serve You
+      </p>
+      <p class="fs-6 text-secondary">
+        Discover the dedicated professionals behind our exceptional care just for you
+      </p>
+      </div>
+      <div class="row px-5">
+
+        <div class="col-12 col-lg-4 border-start border-end position-relative rounded px-2">
+          <img src="./Image-1.png" alt="" class="mx-auto d-block">
+          <button class="stethoscope-light-color rounded-5">Available</button>
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <p class="fs-5 fw-semibold mt-3 mb-0">Dr. Harry Marcelo</p>
+              <p class="text-secondary">Endocrinologist</p>
+              <p>
+                <span class="dollar fs-5 fw-semibold">$64</span>
+                <span>/session</span>
+              </p>
+            </div>
+          <div>
+            <button class="book-now-btn px-4 py-2 rounded-5">
+              <img src="./phone.png" alt="">
+              <span>Book Now</span>
+            </button>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 border-start border-end position-relative rounded px-2">
+          <img src="./dakhtorni.png" alt="" class="mx-auto d-block">
+          <button class="stethoscope-light-color rounded-5">Available</button>
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <p class="fs-5 fw-semibold mt-3 mb-0">Dr. Putri Raviola</p>
+              <p class="text-secondary">Cardiologist</p>
+              <p>
+                <span class="dollar fs-5 fw-semibold">$72</span>
+                <span>/session</span>
+              </p>
+            </div>
+          <div>
+            <button class="book-now-btn px-4 py-2 rounded-5">
+              <img src="./phone.png" alt="">
+              <span>Book Now</span>
+            </button>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 border-start border-end position-relative rounded px-2">
+          <img src="./dakhtorni-2.png" alt="" class="mx-auto d-block">
+          <button class="stethoscope-light-color rounded-5">Available</button>
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <p class="fs-5 fw-semibold mt-3 mb-0">Dr. Niky Jeremiah</p>
+              <p class="text-secondary">Dermatologist</p>
+              <p>
+                <span class="dollar fs-5 fw-semibold">$88</span>
+                <span>/session</span>
+              </p>
+            </div>
+          <div>
+            <button class="book-now-btn px-4 py-2 rounded-5">
+              <img src="./phone.png" alt="">
+              <span>Book Now</span>
+            </button>
+          </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <button class="random-btn">See all Doctors</button>
+      </div>
+    </div>
+
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+      <div class="container-fluid px-5">
+      <div class="text-center mb-5">
+      <p class="font-w fs-1">
+        See What Our
+        Patients Have to Say
+      </p>
+      <p class="fs-6 text-secondary">
+        Discover firsthand accounts of our patient's experiences
+      </p>
+      </div>
+      <div class="row px-5 align-items-stretch">
+
+        <div class="col-12 col-lg-4 border px-3 py-3 rounded shadow-sm ">
+        <p class="mb-5">
+          "Medi Bridge has been a true lifesaver for me and my family. When my father fell ill, we turned to them for help, and they exceeded our expectations in every way."
+        </p>
+        <div class="d-flex gap-3" style="margin-top: 240px">
+          <img src="./Avatar-1.png" alt="" class="circular-dp">
+          <div class="d-flex flex-column">
+            <p class="fw-semibold mb-0">Meca Rachel</p>
+            <p class="text-secondary choose-p">24 years old</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 border px-3 py-3 h-100 rounded shadow-sm ">
+          <img src="./Testimonial Card.png" alt="" class="img-fluid mx-auto d-block">
+      </div>
+
+      <div class="col-12 col-lg-4 border px-3 py-3 rounded shadow-sm ">
+        <p class="mb-5">
+          "I've been a patient at Medi Bridge for years, and they consistently deliver outstanding care. Their dedication to patient well-being is evident in every interaction."
+        </p>
+        <div class="d-flex gap-3" style="margin-top: 240px">
+          <img src="./Avatar-2.png" alt="" class="circular-dp">
+          <div class="d-flex flex-column">
+            <p class="fw-semibold mb-0">Adam Ackson</p>
+            <p class="text-secondary choose-p">27 years old</p>
+          </div>
+        </div>
+      </div>
+
+      
+
+      </div>
+      
+      <div class="text-center mt-5">
+        <button class="random-btn">See all Testimonials</button>
+      </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="px-5 py-5">
+      <div class="container-fluid px-5">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <p class="font-w fs-1">
+              Frequently Asked Questions
+            </p>
+            <p class="text-secondary">
+              Still have something to ask? Contact our sales team
+            </p>
+            <button class="random-btn mb-3">Contact Us</button>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="accordion" id="accordionExample">
+                <!-- Q1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button dollar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How do I schedule an appointment?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Scheduling an appointment at Medi Bridge is easy. You can call our office directly or use our online appointment booking system on our website. Simply select your preferred date and time, and our staff will confirm your appointment promptly.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed dollar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What types of healthcare services does we offer?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Napa, Hystacin, Seclo, Nexam etc.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed dollar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Are walk-in appointments available?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Go Sleep, Go Sleep.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed dollar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Does Medi Bridge accept insurance plans?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            What is Insurance?
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed dollar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            What safety measures does Medi Bridge have?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Too Much Safety.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content & Footer -->
+    <footer class="my-5 px-5 py-5 text-white">
+    <div class="container-fluid px-5">
+        <div class="row">
+            <div class="col-12 text-center position-relative">
+                <div class="banner-container rounded-4 overflow-hidden">
+                    <img src="./Banner-bormon.png" alt="Banner" class="img-fluid w-100">
+                    <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
+                        <p class="font-w fs-1 text-white mb-3">
+                            Discover Comprehensive <br> Care Tailored to Your Needs
+                        </p>
+                        <p class="fs-6 text-white mb-4">
+                            Experience personalized healthcare solutions designed to prioritize your well-being
+                        </p>
+                        <button class="random-btn">Make an Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row gap-5">
+        <div class="col-12 col-lg-4">
+          <div class="mt-5" style="width: 310px; height:200px;">
+            <a href="#"><img src="./Logo.png" alt=""></a>
+            <p class="fs-6 text-secondary mt-3">Empowering Health, Inspiring Lives.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="row d-flex justify-content-between gap-1">
+            <div class="col-9 col-lg-2">
+              <div class="mt-5">
+                <ul class="list-unstyled">
+                  <li class="text-black fw-semibold">Company</li>
+                  <li><a href="#" class="">About Us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Doctors</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-lg-2">
+              <div class="mt-5">
+                <ul class="list-unstyled">
+                  <li class="text-black fw-semibold">Services</li>
+                  <li><a href="#" class="">Clinics</a></li>
+                  <li><a href="#">Healthcare</a></li>
+                  <li><a href="#">Training Center</a></li>
+                  <li><a href="#">Online Consultation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-lg-2">
+              <div class="mt-5">
+                <ul class="list-unstyled">
+                  <li class="text-black fw-semibold">Social Media</li>
+                  <li><a href="https://www.instagram.com/tahmid150/" target="_blank">Instagram</a></li>
+                  <li><a href="https://www.facebook.com/dimhat150" target="_blank">Facebook</a></li>
+                  <li><a href="https://x.com/tahmidroid" target="_blank">Twitter X</a></li>
+                  <li><a href="#" target="_blank">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row border-top">
+        <div class="col-12 d-flex justify-content-between mt-3">
+          <div>
+            <p class="text-secondary">© Copyright Medi Bridge 2024</p>
+          </div>
+          <div>
+            <ul class="list-unstyled d-flex gap-2">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Terms of Condition</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
