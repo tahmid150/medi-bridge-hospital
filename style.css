@@ -191,7 +191,8 @@ body {
 
 .banner-container img {
     object-fit: cover;
-    height: auto;
+    height: 100%;
+    width: 100%;
 }
 
 .position-absolute.top-50.start-50.translate-middle {
@@ -212,7 +213,7 @@ body {
         font-size: 0.9rem; 
     }
     .banner-container {
-        min-height: 200px; 
+        min-height: 400px; 
     }
 }
 
